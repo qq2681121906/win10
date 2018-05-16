@@ -63,6 +63,8 @@ class Hero(GameSprite):
 			sst.rect.bottom = self.rect.y -20
 			sst.rect.centerx = self.rect.centerx -15
 			self.bullets.add(bullet,gws,sst)
+		self.image_hit = pygame.image.load("images/enemy1_down1.png")  # 加载中型敌机中弹图片
+		self.image_hit = pygame.image.load("images/enemy2_down2.png")  # 加载大型敌机中弹图片
 class Bullet(GameSprite):
 	def __init__(self):
 		super().__init__('./images/bullet1.png',-10)
